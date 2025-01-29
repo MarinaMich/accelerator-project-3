@@ -9,23 +9,83 @@
   </head>
 
   <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    <main>
+      <section class="hero" data-test="hero">
+        <h1>Проект "Стажировка"</h1>
+        <header class="hero__header">
+          <img src="logo.png" alt="Логотип проекта.">
+          <nav class="hero__menu menu">
+            <button class="menu__button">меню</button>
+            <ul class="menu__list">
+              <li class="menu_item">
+                <a href="">о проекте</a>
+              </li>
+              <li class="menu_item">
+                <a href="">программы</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a href="">Стажировки</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Волонтёрство</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Учёба</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Религия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu_item">
+                <a href="">как поехать</a>
+              </li>
+              <li class="menu_item">
+                <a href="">отзывы</a>
+              </li>
+              <li class="menu_item">
+                <a href="">новости</a>
+                <ul class="menu__sublist">
+                  <li class="menu__subitem">
+                    <a href="">Общее</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Волонтёрство</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Стажировка</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Карьера</a>
+                  </li>
+                  <li class="menu__subitem">
+                    <a href="">Путешествия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu_item">
+                <a href="">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+      <div data-test="about">about</div>
+      <div data-test="programs">programs</div>
+      <div data-test="grant">grant</div>
+      <div data-test="news">news</div>
+      <div data-test="FAQ">FAQ</div>
+      <div data-test="reviews">reviews</div>
+      <div data-test="contacts">contacts</div>
+      <div data-test="form">form</div>
+    </main>
+    <footer data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
   </body>
 
 </html>
+<!--
+<img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<svg>
+  <use href="/__spritemap#sprite-user"></use>
+</svg>-->
