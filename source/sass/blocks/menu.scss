@@ -1,0 +1,30 @@
+
+
+.menu__list,
+.menu__sublist {
+  @include list-reset;
+}
+
+.menu__link {
+  @include link-edit;
+}
+
+.menu__list {
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.menu__sublist {
+  &--closed {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+}
