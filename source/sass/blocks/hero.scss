@@ -1,0 +1,12 @@
+.hero__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.hero__menu--opened .hero__logo{
+  display: none;
+}
+

@@ -1,4 +1,81 @@
+.menu {
 
+}
+
+.menu__button {
+  //font-family: "Manrope", "Arial", sans-serif;;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.28px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 136px;
+  height: 54px;
+  border-radius: 30px;
+  background-color: $white;
+  border: 1px solid $add-accent;
+  color: $add-accent;
+  padding: 0;
+  padding-right: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__toggle {
+  position: absolute;
+  content: "";
+  width: 46px;
+  height: 46px;
+  background-color: $add-accent;
+  border-radius: 50%;
+  top: 3px;
+  right: 4px;
+}
+
+.menu--closed .menu__toggle::before {
+  position: absolute;
+  content: "";
+  top: 19px;
+  right: 14px;
+  width: 18px;
+  height: 1px;
+  background-color: $white;
+  box-shadow:
+    0 4px 0 0 $white,
+    0 8px 0 0 $white;
+  z-index: 2;
+}
+
+.menu--opened .menu__button {
+  background-color: $add-accent;
+  color: $white;
+  width: 290px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.menu--opened .menu__toggle {
+  background-color: $white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    width: 25px;
+    height: 1px;
+    background-color: $add-accent;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
 
 .menu__list,
 .menu__sublist {
@@ -9,14 +86,12 @@
   @include link-edit;
 }
 
-.menu__list {
-  &--closed {
-    display: none;
-  }
+.menu--closed .menu__list {
+  display: none;
+}
 
-  &--open {
-    display: block;
-  }
+.menu--opened .menu__list {
+  display: none;
 }
 
 .menu__sublist {

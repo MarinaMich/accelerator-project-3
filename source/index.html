@@ -9,66 +9,71 @@
   </head>
 
   <body class="page-body">
+    <header class="hero__header container">
+      <div class="hero__logo">
+        <img src="img/logotype.svg" width="52" height="52" alt="Логотип проекта.">
+      </div>
+      <nav class="hero__menu hero__menu--opened menu menu--opened">
+        <button class="menu__button" type="button">меню
+          <span class="menu__toggle"></span>
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="">о проекте</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">программы</a>
+            <ul class="menu__sublist menu__sublist--closed">
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Стажировки</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Волонтёрство</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Учёба</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Религия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">как поехать</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">отзывы</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">новости</a>
+            <ul class="menu__sublist menu__sublist--closed">
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Общее</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Волонтёрство</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Стажировка</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Карьера</a>
+              </li>
+              <li class="menu__subitem">
+                <a class="menu__link" href="">Путешествия</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="">контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Проект "Стажировка"</h1>
-        <header class="hero__header">
-          <img src="logo.png" alt="Логотип проекта.">
-          <nav class="hero__menu menu">
-            <button class="menu__button">меню</button>
-            <ul class="menu__list menu__list--closed">
-              <li class="menu__item">
-                <a class="menu__link" href="">о проекте</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">программы</a>
-                <ul class="menu__sublist menu__sublist--closed">
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Стажировки</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Волонтёрство</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Учёба</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Религия</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">как поехать</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">отзывы</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">новости</a>
-                <ul class="menu__sublist menu__sublist--closed">
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Общее</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Волонтёрство</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Стажировка</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Карьера</a>
-                  </li>
-                  <li class="menu__subitem">
-                    <a class="menu__link" href="">Путешествия</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="">контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
       </div>
       <div data-test="about">about</div>
       <div data-test="programs">programs</div>
