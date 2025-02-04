@@ -12,6 +12,10 @@
   }
 }
 
+.header__logo img {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .header__wrapper {
     width: 768px;
