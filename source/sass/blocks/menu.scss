@@ -164,3 +164,19 @@
     transform: rotate(180deg);
   }
 }
+
+.menu__link {
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}
