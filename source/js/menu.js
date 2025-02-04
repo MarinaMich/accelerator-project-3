@@ -5,6 +5,23 @@ const headerWrapper = document.querySelector('.header__wrapper');
 const headerLogo = document.querySelector('.header__logo');
 const body = document.body;
 
+// Проверка, что клавиша Esc
+const isEscapeKey = (evt) => evt.key === 'Escape';
+
+// Закрытие меню по нажатию Esc
+const onDocumentKeydown = (evt) => {
+  if (isEscapeKey(evt)) {
+    evt.preventDefault();
+    menu.classList.remove('menu--opened');
+    menu.classList.add('menu--closed');
+    headerLogo.style.display = 'block';
+    header.classList.remove('overlay');
+    headerWrapper.classList.remove('header__wrapper--menu-open');
+    body.classList.remove('fixed');
+    document.removeEventListener('keydown', onDocumentKeydown);
+  }
+};
+
 const showLogo = () => {
   if(window.innerWidth <= 767) {
     headerLogo.style.display = 'none';
@@ -21,6 +38,7 @@ menuButton.addEventListener('click', () => {
     header.classList.add('overlay');
     headerWrapper.classList.add('header__wrapper--menu-open');
     body.classList.add('fixed');
+    document.addEventListener('keydown', onDocumentKeydown);
   } else {
     menu.classList.add('menu--closed');
     menu.classList.remove('menu--opened');
@@ -28,5 +46,6 @@ menuButton.addEventListener('click', () => {
     header.classList.remove('overlay');
     headerWrapper.classList.remove('header__wrapper--menu-open');
     body.classList.remove('fixed');
+    document.removeEventListener('keydown', onDocumentKeydown);
   }
 });

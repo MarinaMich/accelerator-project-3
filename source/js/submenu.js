@@ -7,9 +7,14 @@ linksSubList.forEach((linkSubList) => {
     const linksSubitem = Array.from(menuSubitem.querySelectorAll('.menu__link'));
 
     if(e.target.closest('.menu__item').classList.contains('menu__item--open')) {
-      linksSubitem.forEach((link) => link.setAttribute('tabindex', '0'));
+      linksSubitem.forEach((link) => {
+        link.setAttribute('tabindex', '0');
+      });
+      linksSubitem[0].focus();
+      linkSubList.style.opacity = '0.9';
     } else {
       linksSubitem.forEach((link) => link.setAttribute('tabindex', '-1'));
+      linkSubList.style.opacity = '0.7';
     }
   });
 });
