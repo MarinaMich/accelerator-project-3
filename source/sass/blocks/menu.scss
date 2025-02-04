@@ -158,6 +158,8 @@
 }
 
 .menu__item--open > .menu__link--sublist {
+  opacity: 1;
+
   &::after {
     transform: rotate(180deg);
   }
