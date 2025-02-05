@@ -22,6 +22,7 @@ const onDocumentKeydown = (evt) => {
   }
 };
 
+// прячет логотип при развернутом меню при ширене вьюпорта меньше 350px
 const showLogo = () => {
   if(window.innerWidth <= 767) {
     headerLogo.style.display = 'none';
@@ -30,22 +31,38 @@ const showLogo = () => {
   }
 };
 
+const openMenu = () => {
+  menu.classList.remove('menu--closed');
+  menu.classList.add('menu--opened');
+  showLogo();
+  header.classList.add('overlay');
+  headerWrapper.classList.add('header__wrapper--menu-open');
+  body.classList.add('fixed');
+  document.addEventListener('keydown', onDocumentKeydown);
+};
+
+const closeMenu = () => {
+  menu.classList.add('menu--closed');
+  menu.classList.remove('menu--opened');
+  headerLogo.style.display = 'block';
+  header.classList.remove('overlay');
+  headerWrapper.classList.remove('header__wrapper--menu-open');
+  body.classList.remove('fixed');
+  document.removeEventListener('keydown', onDocumentKeydown);
+};
+
+// взаимодействие с меню через кнопку
 menuButton.addEventListener('click', () => {
   if (menu.classList.contains('menu--closed')) {
-    menu.classList.remove('menu--closed');
-    menu.classList.add('menu--opened');
-    showLogo();
-    header.classList.add('overlay');
-    headerWrapper.classList.add('header__wrapper--menu-open');
-    body.classList.add('fixed');
-    document.addEventListener('keydown', onDocumentKeydown);
+    openMenu();
   } else {
-    menu.classList.add('menu--closed');
-    menu.classList.remove('menu--opened');
-    headerLogo.style.display = 'block';
-    header.classList.remove('overlay');
-    headerWrapper.classList.remove('header__wrapper--menu-open');
-    body.classList.remove('fixed');
-    document.removeEventListener('keydown', onDocumentKeydown);
+    closeMenu();
+  }
+});
+
+// закрытие меню через клик по любому месту экрана, кроме навигации
+document.addEventListener('click', (e) => {
+  if(!e.target.closest('.menu--opened')) {
+    closeMenu();
   }
 });
