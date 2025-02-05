@@ -15,7 +15,7 @@
           <img src="img/logotype.svg" width="52" height="52" alt="Логотип проекта.">
         </div>
         <nav class="header__menu menu menu--closed">
-          <button class="menu__button" type="button">меню
+          <button class="menu__button button" type="button">меню
             <span class="menu__toggle"></span>
             <span class="visually-hidden">Открыть меню.</span>
           </button>
@@ -94,7 +94,11 @@
                     <img width="320" height="568" src="img/mobile/photo-hero-1.jpg" srcset="img/mobile/photo-hero-1@2x.jpg" alt="Студентка на фоне городского собора.">
                   </picture>
                 </div>
-                <div class="show-hero__content"></div>
+                <div class="show-hero__content">
+                  <h2 class="show-hero__title">Глобальный профессиональный опыт обучения за рубежом</h2>
+                  <p class="show-hero__text">Погрузитесь в академическую программу, проходя практику в разных городах, ощущая настоящий студенческий стиль жизни!</p>
+                  <button class="show-hero__btn button" type="button">подробнее</button>
+                </div>
               </div>
               <div class="show-hero__slide swiper-slide">
                 <div class="show-hero__img">
@@ -124,16 +128,9 @@
                   </picture>
                 </div>
               </div>
+              <!-- If we need pagination -->
+              <div class="show-hero__pagination swiper-pagination"></div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <button class="swiper-button-prev" type="button"></button>
-            <button class="swiper-button-next" type="button"></button>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
           </div>
         </div>
       </section>
