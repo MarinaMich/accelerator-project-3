@@ -1,6 +1,5 @@
 const menu = document.querySelector('.menu');
 const menuButton = document.querySelector('.menu__button');
-const header = document.querySelector('.header');
 const headerWrapper = document.querySelector('.header__wrapper');
 const headerLogo = document.querySelector('.header__logo');
 const body = document.body;
