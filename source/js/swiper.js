@@ -3,7 +3,7 @@ import {Navigation, Pagination, Keyboard} from 'swiper/modules';
 
 // слайдер блока hero
 
-const heroSlider = new Swiper('.hero__slider', {
+const heroSlider = new Swiper('.show-hero', {
   modules: [Navigation, Pagination, Keyboard],
   loop: true,
   grabCursor: true,

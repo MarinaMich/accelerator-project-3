@@ -5,6 +5,7 @@ const headerWrapper = document.querySelector('.header__wrapper');
 const headerLogo = document.querySelector('.header__logo');
 const body = document.body;
 
+
 // Проверка, что клавиша Esc
 const isEscapeKey = (evt) => evt.key === 'Escape';
 
@@ -15,7 +16,7 @@ const onDocumentKeydown = (evt) => {
     menu.classList.remove('menu--opened');
     menu.classList.add('menu--closed');
     headerLogo.style.display = 'block';
-    header.classList.remove('overlay');
+    body.classList.remove('overlay');
     headerWrapper.classList.remove('header__wrapper--menu-open');
     body.classList.remove('fixed');
     document.removeEventListener('keydown', onDocumentKeydown);
@@ -35,7 +36,7 @@ const openMenu = () => {
   menu.classList.remove('menu--closed');
   menu.classList.add('menu--opened');
   showLogo();
-  header.classList.add('overlay');
+  body.classList.add('overlay');
   headerWrapper.classList.add('header__wrapper--menu-open');
   body.classList.add('fixed');
   document.addEventListener('keydown', onDocumentKeydown);
@@ -45,7 +46,7 @@ const closeMenu = () => {
   menu.classList.add('menu--closed');
   menu.classList.remove('menu--opened');
   headerLogo.style.display = 'block';
-  header.classList.remove('overlay');
+  body.classList.remove('overlay');
   headerWrapper.classList.remove('header__wrapper--menu-open');
   body.classList.remove('fixed');
   document.removeEventListener('keydown', onDocumentKeydown);
