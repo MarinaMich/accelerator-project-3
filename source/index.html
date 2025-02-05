@@ -76,7 +76,67 @@
     <main>
       <section class="hero" data-test="hero">
         <h1 class="visually-hidden">Проект "Стажировка"</h1>
-      </div>
+        <div class="hero__wrapper">
+          <div class="hero__slider swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="hero__slide swiper-slide">
+                <div class="hero__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-1.webp 1x, img/desktop/photo-hero-1@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/photo-hero-1.webp 1x, img/tablet/photo-hero-1@2x.webp 2x">
+                    <source type="images/webp" width="320" height="568" srcset="img/mobile/photo-hero-1.webp 1x, img/mobile/photo-hero-1@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-1.jpg 1x, img/desktop/photo-hero-1@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="768" height="1024" srcset="img/tablet/photo-hero-1.jpg 1x, img/tablet/photo-hero-1@2x.jpg 2x">
+                    <img width="320" height="568" src="img/mobile/photo-hero-1.jpg" srcset="img/mobile/photo-hero-1@2x.jpg" alt="Студентка на фоне городского собора.">
+                  </picture>
+                </div>
+                <div class="hero__content"></div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-2.webp 1x, img/desktop/photo-hero-2@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/photo-hero-2.webp 1x, img/tablet/photo-hero-2@2x.webp 2x">
+                    <source type="images/webp" width="320" height="568" srcset="img/mobile/photo-hero-2.webp 1x, img/mobile/photo-hero-2@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-2.jpg 1x, img/desktop/photo-hero-2@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="768" height="1024" srcset="img/tablet/photo-hero-2.jpg 1x, img/tablet/photo-hero-2@2x.jpg 2x">
+                    <img width="320" height="568" src="img/mobile/photo-hero-2.jpg" srcset="img/mobile/photo-hero-2@2x.jpg" alt="Группа студентов из разных стран.">
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-3.webp 1x, img/desktop/photo-hero-3@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="768" height="1034" srcset="img/tablet/photo-hero-3.webp 1x, img/tablet/photo-hero-3@2x.webp 2x">
+                    <source type="images/webp" width="320" height="568" srcset="img/mobile/photo-hero-3.webp 1x, img/mobile/photo-hero-3@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="1440" height="800" srcset="img/desktop/photo-hero-3.jpg 1x, img/desktop/photo-hero-3@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="768" height="1024" srcset="img/tablet/photo-hero-3.jpg 1x, img/tablet/photo-hero-3@2x.jpg 2x">
+                    <img width="320" height="568" src="img/mobile/photo-hero-3.jpg" srcset="img/mobile/photo-hero-3@2x.jpg" alt="Студенты разбирают свои работы с преподавателем.">
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <button class="swiper-button-prev" type="button"></button>
+            <button class="swiper-button-next" type="button"></button>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
       <div data-test="about">about</div>
       <div data-test="programs">programs</div>
       <div data-test="grant">grant</div>
