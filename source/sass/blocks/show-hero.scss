@@ -214,8 +214,8 @@
     &::after {
       width: 20px;
       height: 20px;
-      top: 21px;
-      right: -19px;
+      top: 22px;
+      right: -20px;
     }
   }
 
@@ -267,5 +267,15 @@
     right: 5px;
     top: 5px;
     padding: 18px;
+  }
+
+  .show-hero__pagination {
+    bottom: 351px;
+    left: 65px;
+  }
+
+  .show-hero__pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
   }
 }

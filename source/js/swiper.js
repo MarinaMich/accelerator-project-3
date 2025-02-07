@@ -18,10 +18,20 @@ const heroSlider = new Swiper('.show-hero', {
       const index = this.activeIndex;
       const currentSlide = this.slides[index];
       const currentContent = currentSlide.querySelector('.show-hero__content');
+      const control = currentContent.querySelector('.show-hero__control');
       const pagination = document.querySelector('.show-hero__pagination');
-
-      const paginationHorisontally = (this.el.getBoundingClientRect().width - 320) / 2 + 31;
-      pagination.style.bottom = getComputedStyle(currentContent).height;
+      // значения свойств блока show-hero__content
+      let bottomContent = window.getComputedStyle(currentContent).bottom;
+      bottomContent = parseInt(bottomContent, 10);
+      let paddingTopControl = window.getComputedStyle(control).paddingTop;
+      paddingTopControl = parseInt(paddingTopControl, 10);
+      let paddingLeftControl = window.getComputedStyle(control).paddingLeft;
+      paddingLeftControl = parseInt(paddingLeftControl, 10);
+      // расчет положения пагинации
+      const paginationHorisontally = (this.el.getBoundingClientRect().width - currentContent.getBoundingClientRect().width) / 2 + paddingLeftControl;
+      const paginationVertically = currentContent.getBoundingClientRect().height + bottomContent - paddingTopControl * 2;
+      // присваивание новых свойств
+      pagination.style.bottom = `${paginationVertically}px`;
       pagination.style.left = `${paginationHorisontally}px`;
     }
   },
