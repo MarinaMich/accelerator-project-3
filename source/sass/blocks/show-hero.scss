@@ -31,6 +31,31 @@
  // padding-left: 15px;
 }
 
+.show-hero__img img {
+  display: block;
+}
+
+.show-hero__control {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 28px;
+  padding: 10px 16px;
+  border-radius: 14px 14px 0 0;
+  background-color: $white;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 10px;
+    background-image: url("/__spritemap#sprite-curvature-view");
+    top: 19px;
+    right: -8px;
+    transform: rotate(-90deg);
+  }
+}
+
 .show-hero__title {
   font-family: "Manrope", "Arial", sans-serif;
   font-size: 22px;
@@ -46,7 +71,8 @@
   position: relative;
 }
 
-.show-hero__text {
+.show-hero__content p {
+  font-size: 16px;
   width: 267px;
   padding: 0 14px 15px 14px;
   border-radius: 0 0 14px 0px;
@@ -65,29 +91,61 @@
   }
 }
 
+.show-hero__btn-wrap {
+  width: 184px;
+  padding: 10px 15px;
+  border-radius: 0 0 14px 14px;
+  background-color: $white;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 10px;
+    background-image: url("/__spritemap#sprite-curvature-view");
+    top: 0;
+    right: -8px;
+  }
+}
 .show-hero__btn {
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
   letter-spacing: 0.02em;
   text-align: center;
-  padding: 10px 15px;
-  border-radius: 0 0 14px 14px;
-  background-color: $white;
+  padding: 15px 58px 15px 20px;
+  position: relative;
 }
 
-.show-hero .swiper-pagination-bullets {
+.show-hero__btn-arrow {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  right: 4px;
+  top: 4px;
+  color: $white;
+  background-color: $add-accent;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.show-hero__pagination {
   display: flex;
   column-gap: 12px;
   justify-content: center;
-  margin-bottom: 32px;
+  position: absolute;
+  bottom: 347px;
+  z-index: 10;
+  left: 30px;
 }
 
 .show-hero__pagination .swiper-pagination-bullet {
   border: 2px solid $add-accent;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   opacity: 1;
   background-color: inherit;
 }
