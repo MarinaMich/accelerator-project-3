@@ -9,15 +9,6 @@
 .show-hero__slide {
   display: flex;
   justify-content: center;
-  //position: absolute;
-  //content: "";
-  //margin: 0;
-  //padding: 0;
- //z-index: -1;
- // width: 100%;
-  //height: 568px;
-  //object-fit: cover;
-  //object-position: center;
 }
 
 .show-hero__slide {
@@ -59,6 +50,7 @@
     top: 19px;
     right: -8px;
     transform: rotate(-90deg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -94,6 +86,7 @@
     background-image: url("/__spritemap#sprite-curvature-view");
     top: 0;
     right: -8px;
+    background-repeat: no-repeat;
   }
 }
 
@@ -112,8 +105,10 @@
     background-image: url("/__spritemap#sprite-curvature-view");
     top: 0;
     right: -8px;
+    background-repeat: no-repeat;
   }
 }
+
 .show-hero__btn {
   font-size: 12px;
   font-weight: 500;
@@ -149,8 +144,6 @@
   &:focus,
   &:focus-visible {
     .show-hero__btn-arrow {
-      //color: $add-accent;
-      //background-color: $white;
       transform: rotate(45deg);
     }
   }
@@ -190,4 +183,89 @@
 
 .show-hero__pagination .swiper-pagination-bullet-active {
   background-color: $add-accent;
+}
+
+@media (min-width: $tablet-width) {
+  .show-hero__slide {
+    height: 1024px;
+  }
+  .show-hero__content {
+    bottom: 60px;
+    display: grid;
+    grid-template-rows: 40px auto auto;
+    grid-template-columns: auto 1fr;
+  }
+
+  .show-hero__img img {
+    height: 1024px;
+  }
+
+  .show-hero__control {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    padding: 14px 20px;
+    border-radius: 14px 14px 0 0;
+    background-color: $white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      top: 21px;
+      right: -19px;
+    }
+  }
+
+  .show-hero__title {
+    font-size: 36px;
+    line-height: 44px;
+    width: 659px;
+    padding: 30px 69px 24px 40px;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .show-hero__content p {
+    width: 325px;
+    padding: 0 0 35px 40px;
+    border-radius: 0 0 0 14px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    &::after {
+      content: none;
+    }
+  }
+
+  .show-hero__btn-wrap {
+    width: 268px;
+    padding: 0 40px 79px 30px;
+    border-radius: 0 0 14px 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    &::after {
+      width: 20px;
+      height: 20px;
+      right: -19px;
+    }
+  }
+
+  .show-hero__btn {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    padding: 21px 81px 21px 31px;
+  }
+
+  .show-hero__btn-arrow {
+    width: 46px;
+    height: 46px;
+    right: 5px;
+    top: 5px;
+    padding: 18px;
+  }
 }
