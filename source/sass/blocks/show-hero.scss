@@ -122,6 +122,38 @@
   text-align: center;
   padding: 15px 58px 15px 20px;
   position: relative;
+
+  &:hover {
+    .show-hero__btn-arrow {
+      color: $add-accent;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    .show-hero__btn-arrow {
+      background-color: $white;
+      color: $add-accent;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:disabled {
+    .show-hero__btn-arrow {
+      background-color:$disabled;
+      color: $white;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    .show-hero__btn-arrow {
+      //color: $add-accent;
+      //background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
 }
 
 .show-hero__btn-arrow {

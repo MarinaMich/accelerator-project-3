@@ -8,4 +8,20 @@
   border: 1px solid $add-accent;
   color: $add-accent;
   padding: 4px 4px 4px 20px;
+
+  &:hover {
+    background-color: $add-accent;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $add-accent;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:disabled {
+    background-color:transparent;
+    color: $disabled;
+    border-color: $disabled;
+  }
 }
