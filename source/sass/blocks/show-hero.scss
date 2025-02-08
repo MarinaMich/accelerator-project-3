@@ -201,8 +201,6 @@
   }
 
   .show-hero__control {
-    display: block;
-    position: relative;
     width: 100px;
     height: 40px;
     padding: 14px 20px;
@@ -277,5 +275,40 @@
   .show-hero__pagination .swiper-pagination-bullet {
     width: 12px;
     height: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .show-hero__slide {
+    height: 800px;
+  }
+  .show-hero__content {
+    left: 100px;
+  }
+
+  .show-hero__img img {
+    height: 800px;
+  }
+
+  .show-hero__title {
+    font-size: 54px;
+    line-height: 62px;
+    width: 968px;
+    padding: 40px 50px 30px 50px;
+  }
+
+  .show-hero__content p {
+    line-height: 26px;
+    width: 496px;
+    padding: 0 55px 35px 50px;
+  }
+
+  .show-hero__btn-wrap {
+    width: 279px;
+    padding: 10px 50px 45px 30px;
+  }
+
+  .show-hero__btn {
+    padding: 22px 82px 22px 31px;
   }
 }
