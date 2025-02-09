@@ -296,9 +296,7 @@
 @media (min-width: $desktop-width) {
   .show-hero__slide {
     height: 800px;
-  }
-  .show-hero__content {
-    //left: 100px;
+    justify-content: left;
   }
 
   .show-hero__img img {
