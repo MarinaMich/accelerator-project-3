@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import {Navigation, Pagination, Keyboard} from 'swiper/modules';
+import {Navigation, Pagination, Keyboard, Scrollbar} from 'swiper/modules';
 
 // слайдер блока hero
 
@@ -62,4 +62,13 @@ const heroSlider = new Swiper('.show-hero', {
   },
 });
 
+// слайдер программ
+
+const typesPrograms = new Swiper('.types-programs', {
+  modules: [Navigation, Scrollbar, Keyboard],
+  loop: false,
+  grabCursor: true,
+});
+
 heroSlider.init();
+typesPrograms.init();

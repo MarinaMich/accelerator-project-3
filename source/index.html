@@ -224,7 +224,30 @@
           </li>
         </ul>
       </section>
-      <div data-test="programs">programs</div>
+      <section class="programs container" data-test="programs">
+        <h2 class="programs__title">Программы</h2>
+        <div class="programs__slider types-programs swiper">
+          <div class="types-programs__wrapper swiper-wrapper">
+            <div class="types-programs__type swiper-slide">Slide 1</div>
+            <div class="types-programs__type swiper-slide">Slide 2</div>
+            <div class="types-programs__type swiper-slide">Slide 3</div>
+          </div>
+
+          <div class="types-programs__button-prev swiper-button-prev"></div>
+          <div class="types-programs__button-next swiper-button-next"></div>
+
+          <div class="types-programs__scrollbar swiper-scrollbar"></div>
+        </div>
+        <div>
+          <a class="programs__btn button" href="#">все программы
+            <span class="programs__btn-arrow">
+              <svg width="8" height="8">
+                <use href="/__spritemap#sprite-arrow"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
       <div data-test="grant">grant</div>
       <div data-test="news">news</div>
       <div data-test="FAQ">FAQ</div>
