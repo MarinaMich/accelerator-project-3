@@ -3,7 +3,7 @@
   width: 136px;
   transition: width 0.5s ease;
   height: 54px;
-  padding-right: 50px;
+  padding-right: 71px;
   position: relative;
   cursor: pointer;
 }
@@ -23,8 +23,8 @@
   position: absolute;
   content: "";
   top: 19px;
-  right: 14px;
-  width: 18px;
+  right: 16px;
+  width: 14.4px;
   height: 1px;
   background-color: $white;
   box-shadow:
@@ -162,5 +162,15 @@
 
   &::after {
     transform: rotate(180deg);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .menu__button {
+    height: 56px;
+  }
+
+  .menu__toggle {
+    top: 4px;
   }
 }

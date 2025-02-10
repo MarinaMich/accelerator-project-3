@@ -25,6 +25,11 @@
 @media (min-width: $tablet-width) {
   .header__wrapper {
     width: 678px;
+    padding-top: 30px;
+  }
+
+  .header__logo {
+    padding-top: 2px;
   }
 }
 

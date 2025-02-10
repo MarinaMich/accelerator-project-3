@@ -220,7 +220,7 @@
     width: 100px;
     height: 40px;
     padding: 14px 20px;
-    border-radius: 14px 14px 0 0;
+    border-radius: 20px 20px 0 0;
     background-color: $white;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -240,12 +240,13 @@
     padding: 30px 69px 24px 40px;
     grid-column: 1/3;
     grid-row: 2/3;
+    border-radius: 0 30px 30px 0px;
   }
 
   .show-hero__content p {
     width: 325px;
     padding: 0 0 35px 40px;
-    border-radius: 0 0 0 14px;
+    border-radius: 0 0 0 30px;
     grid-column: 1/2;
     grid-row: 3/4;
 
@@ -257,7 +258,7 @@
   .show-hero__btn-wrap {
     width: 268px;
     padding: 0 40px 79px 30px;
-    border-radius: 0 0 14px 0;
+    border-radius: 0 0 30px 0;
     grid-column: 2/3;
     grid-row: 3/4;
 
@@ -272,7 +273,7 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.28px;
-    padding: 21px 81px 21px 31px;
+    padding: 20px 80px 20px 30px;
   }
 
   .show-hero__btn-arrow {
@@ -322,7 +323,7 @@
   }
 
   .show-hero__btn {
-    padding: 22px 82px 22px 31px;
+    padding: 21px 81px 21px 30px;
   }
 }
 
