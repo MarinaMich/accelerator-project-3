@@ -203,6 +203,7 @@
 @media (min-width: $tablet-width) {
   .show-hero__slide {
     height: 1024px;
+    justify-content: left;
   }
   .show-hero__content {
     bottom: 60px;
@@ -296,7 +297,6 @@
 @media (min-width: $desktop-width) {
   .show-hero__slide {
     height: 800px;
-    justify-content: left;
   }
 
   .show-hero__img img {

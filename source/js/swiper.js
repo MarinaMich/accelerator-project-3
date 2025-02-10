@@ -29,6 +29,10 @@ const heroSlider = new Swiper('.show-hero', {
       paddingTopControl = parseInt(paddingTopControl, 10);
       let paddingLeftControl = window.getComputedStyle(control).paddingLeft;
       paddingLeftControl = parseInt(paddingLeftControl, 10);
+      if (document.documentElement.clientWidth >= 768) {
+        const paddingLeft = (slider.getBoundingClientRect().width - 678) / 2;
+        currentContent.style.left = `${paddingLeft}px`;
+      }
       if (document.documentElement.clientWidth >= 1440) {
         const paddingLeft = (slider.getBoundingClientRect().width - 1240) / 2;
         currentContent.style.left = `${paddingLeft}px`;
@@ -40,6 +44,10 @@ const heroSlider = new Swiper('.show-hero', {
       // присваивание новых свойств
       pagination.style.bottom = `${paginationVertically}px`;
       pagination.style.left = `${paginationHorisontally}px`;
+      if (document.documentElement.clientWidth >= 768) {
+        const paginationLeft = (this.el.getBoundingClientRect().width - 678) / 2 + 20;
+        pagination.style.left = `${paginationLeft}px`;
+      }
       if (document.documentElement.clientWidth >= 1440) {
         const paginationLeft = (this.el.getBoundingClientRect().width - 1240) / 2 + 20;
         pagination.style.left = `${paginationLeft}px`;
