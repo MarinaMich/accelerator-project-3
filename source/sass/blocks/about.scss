@@ -25,6 +25,7 @@
 .about__container span {
   font-size: 16px;
   line-height: 22px;
+  display: block;
 }
 
 .about__container h3 {
@@ -45,7 +46,7 @@
   font-size: 12px;
   font-weight: 500;
   line-height: 12px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.28px;
   text-align: center;
   padding: 15px 58px 15px 20px;
   position: relative;
@@ -92,6 +93,98 @@
   color: $white;
   background-color: $add-accent;
   border-radius: 50%;
-  padding: 6px;
+  padding: 12px;
+  padding-top: 5px;
+}
 
+@media (min-width: $tablet-width) {
+  .about {
+    row-gap: 60px;
+    width: 768px;
+  }
+
+  .about__description {
+    padding-right: 40px;
+  }
+
+  .about__title {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .about__container span {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .about__container h3 {
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .about__container p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .about__btn {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 20px 80px 20px 30px;
+  }
+
+  .about__btn-arrow {
+    width: 46px;
+    height: 46px;
+    right: 5px;
+    top: 5px;
+    padding: 19px;
+    padding-top: 7px;
+  }
+
+  .about__container:last-child {
+    padding-right: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  .about__description {
+    padding-right: 0;
+    flex-direction: row;
+    column-gap: 40px;
+  }
+
+  .about__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+
+  .about__container h3 {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  .about__container p {
+    line-height: 26px;
+    margin-bottom: 50px;
+  }
+
+  .about__container:first-child span {
+    font-size: 22px;
+    line-height: 32px;
+    width: 702px;
+  }
+
+  .about__container:last-child {
+    padding-right: 0;
+  }
 }
