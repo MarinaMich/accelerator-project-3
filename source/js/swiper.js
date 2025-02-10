@@ -7,10 +7,16 @@ const heroSlider = new Swiper('.show-hero', {
   modules: [Pagination, Keyboard],
   loop: true,
   grabCursor: true,
+  autoHeight: true,
   pagination: {
     el: '.show-hero__pagination',
     type: 'bullets',
     clickable: true,
+  },
+  breakpoints: {
+    1440: {
+      allowTouchMove: false,
+    }
   },
   on: {
     // переопределяет место пагинации для каждого слайда
