@@ -49,6 +49,7 @@
   text-align: center;
   padding: 15px 58px 15px 20px;
   position: relative;
+  background-color: transparent;
 
   &:hover {
     .about__btn-arrow {
@@ -60,7 +61,7 @@
 
   &:active {
     .about__btn-arrow {
-      background-color: $white;
+      background-color: $backdrop;
       color: $add-accent;
       transform: rotate(45deg);
     }
