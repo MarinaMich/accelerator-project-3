@@ -226,26 +226,104 @@
       </section>
       <section class="programs container" data-test="programs">
         <h2 class="programs__title">Программы</h2>
-        <div class="programs__slider types-programs swiper">
-          <div class="types-programs__wrapper swiper-wrapper">
-            <div class="types-programs__type swiper-slide">Slide 1</div>
-            <div class="types-programs__type swiper-slide">Slide 2</div>
-            <div class="types-programs__type swiper-slide">Slide 3</div>
+        <div class="programs__wrapper">
+          <div class="programs__slider types-programs swiper">
+            <div class="types-programs__wrapper swiper-wrapper">
+              <div class="types-programs__type swiper-slide">
+                <div class="types-programs__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-1.webp 1x, img/desktop/program-1@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-1.webp 1x, img/tablet/program-1@2x.webp 2x">
+                    <source type="images/webp" width="290" height="400" srcset="img/mobile/program-1.webp 1x, img/mobile/program-1@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-1.jpg 1x, img/desktop/program-1@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-1.jpg 1x, img/tablet/program-1@2x.jpg 2x">
+                    <img width="290" height="400" src="./img/mobile/program-1.jpg" srcset="./img/mobile/program-1@2x.jpg" alt="Девушки-студентки на стажировке.">
+                  </picture>
+                </div>
+                <div class="types-programs__content">
+                  <h3 class="types-programs__title">Стажировки</h3>
+                  <div class="types-programs__description description">
+                    <p>Получите незаменимый опыт работы в крупнейших мировых компаниях.</p>
+                    <a class="description__link" href="#">
+                      <svg width="8" height="8">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="types-programs__type swiper-slide">
+                <div class="types-programs__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-1.webp 1x, img/desktop/program-1@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-2.webp 1x, img/tablet/program-2@2x.webp 2x">
+                    <source type="images/webp" width="290" height="400" srcset="img/mobile/program-2.webp 1x, img/mobile/program-2@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-2.jpg 1x, img/desktop/program-2@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-2.jpg 1x, img/tablet/program-2@2x.jpg 2x">
+                    <img width="290" height="400" src="./img/mobile/program-2.jpg" srcset="./img/mobile/program-2@2x.jpg" alt="Фото волонтера.">
+                </div>
+                <div class="types-programs__content">
+                  <h3 class="types-programs__title">Волонтёрство</h3>
+                  <div class="types-programs__description description">
+                    <p>Помогайте другим и развивайте свои лидерские качества.</p>
+                    <a class="description__link" href="#">
+                      <svg width="8" height="8">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="types-programs__type swiper-slide">
+                <div class="types-programs__img">
+                  <picture>
+                    <!-- WebP -->
+                    <source type="images/webp" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-3.webp 1x, img/desktop/program-3@2x.webp 2x">
+                    <source type="images/webp" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-3.webp 1x, img/tablet/program-3@2x.webp 2x">
+                    <source type="images/webp" width="290" height="400" srcset="img/mobile/program-3.webp 1x, img/mobile/program-3@2x.webp 2x">
+                    <!-- JPG -->
+                    <source type="image/png" media="(min-width: 1440px)" width="392" height="420" srcset="img/desktop/program-3.jpg 1x, img/desktop/program-3@2x.jpg 2x">
+                    <source type="image/png" media="(min-width: 768px)" width="324" height="420" srcset="img/tablet/program-3.jpg 1x, img/tablet/program-3@2x.jpg 2x">
+                    <img width="290" height="400" src="./img/mobile/program-3.jpg" srcset="./img/mobile/program-3@2x.jpg" alt="Студент за учебниками.">
+                  </picture>
+                </div>
+                <div class="types-programs__content">
+                  <h3 class="types-programs__title">Учёба</h3>
+                  <div class="types-programs__description description">
+                    <p>Получите образование и измените своё будущее.</p>
+                    <a class="description__link" href="#">
+                      <svg width="8" height="8">
+                        <use href="/__spritemap#sprite-arrow"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="types-programs__scrollbar swiper-scrollbar"></div>
           </div>
-
-          <div class="types-programs__button-prev swiper-button-prev"></div>
-          <div class="types-programs__button-next swiper-button-next"></div>
-
-          <div class="types-programs__scrollbar swiper-scrollbar"></div>
+          <button class="types-programs__button-prev swiper-button-prev">
+            <svg width="10" height="10">
+              <use href="/__spritemap#sprite-slide-arrow"></use>
+            </svg>
+          </button>
+          <button class="types-programs__button-next swiper-button-next">
+            <svg width="10" height="10">
+              <use href="/__spritemap#sprite-slide-arrow"></use>
+            </svg>
+          </button>
         </div>
-        <div>
-          <a class="programs__btn button" href="#">все программы
-            <span class="programs__btn-arrow">
-              <svg width="8" height="8">
-                <use href="/__spritemap#sprite-arrow"></use>
-              </svg>
-            </span>
-          </a>
+        <a class="programs__btn button" href="#">все программы
+          <span class="programs__btn-arrow">
+            <svg width="8" height="8">
+              <use href="/__spritemap#sprite-arrow"></use>
+            </svg>
+          </span>
+        </a>
         </div>
       </section>
       <div data-test="grant">grant</div>

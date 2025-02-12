@@ -1,0 +1,79 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.programs__title {
+  margin: 5px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: $add-accent;
+}
+
+.programs__wrapper {
+  position: relative;
+}
+
+.programs__btn {
+  @include link-edit;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  text-align: center;
+  background-color: transparent;
+  color: $add-accent;
+  position: relative;
+  padding: 15px 68px 15px 30px;
+  width: 203px;
+
+  &:hover {
+    .programs__btn-arrow {
+      color: $add-accent;
+      background-color: $white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    .programs__btn-arrow {
+      background-color: $white;
+      color: $add-accent;
+      transform: rotate(45deg);
+    }
+  }
+
+  &--disabled {
+    .programs__btn-arrow {
+      background-color:$disabled;
+      color: $white;
+    }
+  }
+
+  &:focus,
+  &:focus-visible {
+    .programs__btn-arrow {
+      transform: rotate(45deg);
+    }
+  }
+}
+
+.programs__btn-arrow {
+  display: block;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  right: 4px;
+  top: 4px;
+  color: $white;
+  background-color: $add-accent;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.programs__btn-arrow svg {
+  stroke-width: 1.6px;
+}

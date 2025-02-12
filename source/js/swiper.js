@@ -68,6 +68,15 @@ const typesPrograms = new Swiper('.types-programs', {
   modules: [Navigation, Scrollbar, Keyboard],
   loop: false,
   grabCursor: true,
+
+  // Navigation arrows
+  navigation: {
+    prevEl: '.types-programs__button-prev',
+    nextEl: '.types-programs__button-next',
+  },
+  scrollbar: {
+    el: '.types-programs__scrollbar',
+  }
 });
 
 heroSlider.init();

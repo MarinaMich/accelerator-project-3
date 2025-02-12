@@ -1,0 +1,53 @@
+.description {
+  display: flex;
+  column-gap: 16px;
+  border-radius: 0 12px 12px 12px;
+  background-color: $white;
+  padding: 12px 18px 15px;
+}
+
+.description p {
+  font-size: 12px;
+  line-height: 14px;
+  width: 188px;
+  margin: 0;
+}
+
+.description__link {
+  @include link-edit;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $add-accent;
+  color: $white;
+  margin-top: 6px;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $add-accent;
+    background-color: $white;
+    transform: rotate(45deg);
+  }
+
+  &:active {
+    background-color: $white;
+    color: $add-accent;
+    transform: rotate(45deg);
+  }
+
+  &--disabled {
+    background-color:$disabled;
+    color: $white;
+  }
+
+  &:focus,
+  &:focus-visible {
+    transform: rotate(45deg);
+  }
+}
+
+.description__link svg {
+  stroke-width: 1.6px;
+}
