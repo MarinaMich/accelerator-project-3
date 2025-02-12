@@ -1,6 +1,7 @@
 .types-programs__wrapper {
-  width: 290px;
+ //
 }
+
 .types-programs__type {
   position: relative;
 }
@@ -54,10 +55,6 @@
   }
 }
 
-.types-programs__scrollbar {
-  display: none;
-}
-
 .types-programs__button-prev,
 .types-programs__button-next {
   position: absolute;
@@ -79,4 +76,40 @@
 
 .types-programs__button-next {
   right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .types-programs__button-prev,
+  .types-programs__button-next {
+    top: 460px;
+  }
+
+  .types-programs__content {
+    bottom: 10px;
+    left: 20px;
+  }
+
+  .types-programs__title {
+    font-size: 20px;
+    line-height: 14px;
+    padding: 18px 38px 6px 18px;
+    width: 173px;
+  }
+
+  .types-programs__scrollbar {
+    width: 564px;
+    margin-top: 50px;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+
+  .types-programs__scrollbar .swiper-scrollbar-drag {
+    height: 2px;
+    background-color: $add-accent;
+    //width: 564px;
+   // margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

@@ -6,6 +6,10 @@
   padding-bottom: 50px;
 }
 
+.programs__slider {
+  width: 290px;
+}
+
 .programs__title {
   margin: 5px 0;
   font-weight: 400;
@@ -76,4 +80,58 @@
 
 .programs__btn-arrow svg {
   stroke-width: 1.6px;
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    row-gap: 40px;
+  }
+
+  .programs__title {
+    margin: 3px 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  .programs__slider {
+    width: 725px;
+    margin-right: -45px;
+  }
+
+  .programs__title {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .programs__btn {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    padding: 20px 80px 20px 30px;
+    width: 234px;
+  }
+
+  .programs__btn-arrow {
+    width: 46px;
+    height: 46px;
+    right: 5px;
+    top: 5px;
+    padding: 18px;
+    padding-top: 16px;
+  }
+
+  .programs__wrapper {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
