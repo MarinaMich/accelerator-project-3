@@ -1,7 +1,3 @@
-.types-programs__wrapper {
- //
-}
-
 .types-programs__type {
   position: relative;
 }
@@ -61,6 +57,9 @@
   border: none;
   top: -56px;
   color: $add-accent;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
 
   &:disabled {
     color: $disabled;
@@ -105,11 +104,27 @@
   .types-programs__scrollbar .swiper-scrollbar-drag {
     height: 2px;
     background-color: $add-accent;
-    //width: 564px;
-   // margin-top: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .types-programs__content {
+    bottom: 17px;
+    left: 20px;
+  }
 
+  .types-programs__title {
+    font-size: 24px;
+    line-height: 17px;
+    padding: 18px 36px 6px 18px;
+    width: 194px;
+  }
+
+  .types-programs__type {
+    width: 392px;
+  }
+
+  .types-programs__scrollbar {
+    width: 1136px;
+  }
 }

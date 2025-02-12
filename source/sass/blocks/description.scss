@@ -11,6 +11,8 @@
   line-height: 14px;
   width: 188px;
   margin: 0;
+  min-height: 42px;
+  align-content: center;
 }
 
 .description__link {
@@ -57,6 +59,7 @@
     font-size: 14px;
     line-height: 20px;
     width: 202px;
+    min-height: 60px;
   }
 
   .description__link {
@@ -65,5 +68,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .description p {
+    line-height: 18px;
+    width: 239px;
+    min-height: 54px;
+  }
 
+  .description__link {
+    margin-top: 12px;
+  }
 }

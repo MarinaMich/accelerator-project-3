@@ -32,7 +32,7 @@
   color: $add-accent;
   position: relative;
   padding: 15px 68px 15px 30px;
-  width: 203px;
+  width: 205px;
 
   &:hover {
     .programs__btn-arrow {
@@ -94,16 +94,13 @@
     margin: 3px 0;
     font-size: 34px;
     line-height: 50px;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   .programs__slider {
     width: 725px;
     margin-right: -45px;
-  }
-
-  .programs__title {
-    grid-column: 1/2;
-    grid-row: 1/2;
   }
 
   .programs__btn {
@@ -133,5 +130,23 @@
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
+  .programs__slider {
+    width: 1240px;
+    margin-right: 0;
+  }
+
+  .programs__title {
+    margin: 5px 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .programs__btn {
+    margin: 2px 0;
+  }
 }

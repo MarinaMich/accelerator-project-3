@@ -83,6 +83,16 @@ const typesPrograms = new Swiper('.types-programs', {
         dragSize: 324,
       },
     },
+    1440: {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      scrollbar: {
+        el: '.types-programs__scrollbar',
+        draggable: true,
+        dragSize: 392,
+        snapOnRelease: true,
+      },
+    },
   },
   navigation: {
     prevEl: '.types-programs__button-prev',
