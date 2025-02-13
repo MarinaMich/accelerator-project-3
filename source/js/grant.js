@@ -20,4 +20,15 @@ list.forEach((item, index) => {
   number.style.lineHeight = '18px';
   number.style.fontWeight = '500';
   number.style.backgroundColor = '#316dc2';
+  if (document.documentElement.clientWidth >= 768) {
+    number.style.fontSize = '22px';
+    number.style.lineHeight = '22px';
+    number.style.width = '42px';
+    number.style.height = '42px';
+    number.style.top = '-15px';
+    number.style.left = '-20px';
+  }
+  if (document.documentElement.clientWidth >= 1440) {
+
+  }
 });
