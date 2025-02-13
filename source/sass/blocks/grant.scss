@@ -3,6 +3,7 @@
   padding-bottom: 70px;
   color: $white;
   background-color: $add-accent;
+  width: 320px;
 }
 
 .grant__title {
@@ -34,3 +35,7 @@
   border-radius: 18px;
   object-fit: contain;
 }
+
+@media (min-width: $tablet-width) {}
+
+@media (min-width: $desktop-width) {}
