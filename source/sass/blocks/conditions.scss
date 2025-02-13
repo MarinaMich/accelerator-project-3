@@ -1,0 +1,22 @@
+.conditions__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.conditions__list {
+  @include list-reset;
+  padding-top: 5px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.conditions__item {
+  padding: 25px 26px;
+  outline: 1px solid $add-light;
+  border-radius: 16px;
+}

@@ -1,0 +1,36 @@
+.grant {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: $white;
+  background-color: $add-accent;
+}
+
+.grant__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.grant p {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.grant__img {
+  background-color: $add-blue-button;
+  border-radius: 16px;
+  color: $white;
+  width: 290px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.grant__img img {
+  display: block;
+  width: 290px;
+  height: 200px;
+  border-radius: 18px;
+  object-fit: contain;
+}
