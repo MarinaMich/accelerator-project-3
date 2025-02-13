@@ -29,6 +29,6 @@ list.forEach((item, index) => {
     number.style.left = '-20px';
   }
   if (document.documentElement.clientWidth >= 1440) {
-
+    number.style.letterSpacing = '0.22px';
   }
 });

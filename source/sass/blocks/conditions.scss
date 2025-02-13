@@ -54,4 +54,29 @@
   }
 }
 
-@media (min-width: $desktop-width) {}
+@media (min-width: $desktop-width) {
+  .conditions {
+    width: 493px;
+  }
+
+  .conditions__title {
+    width: 373px;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+
+  .conditions__list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    column-gap: 0;
+    row-gap: 23px;
+  }
+
+  .conditions__item {
+    width: 478px;
+    line-height: 26px;
+    padding: 30px 25px;
+  }
+}
