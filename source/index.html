@@ -356,7 +356,14 @@
           <p>Свяжитесь с координатором, чтобы узнать полную информацию. Вы получите актуальные сведения о доступных программах и городах, в которых можете пройти программу.</p>
           <div class="grant__img">
             <picture>
-              <img src="" alt="Дорожный указатель с названиями городов.">
+              <!-- WebP -->
+              <source type="images/webp" media="(min-width: 1440px)" width="392" height="420" srcset="img/grant-desk.webp 1x, img/grant-desk@2x.webp 2x">
+              <source type="images/webp" media="(min-width: 768px)" width="678" height="375" srcset="img/grant-tab.webp 1x, img/grant-tab@2x.webp 2x">
+              <source type="images/webp" width="290" height="200" srcset="img/grant-mob.webp 1x, img/grant-mob@2x.webp 2x">
+              <!-- JPG -->
+              <source type="image/png" media="(min-width: 1440px)" width="392" height="420" srcset="img/grant-desk.jpg 1x, img/grant-desk@2x.jpg 2x">
+              <source type="image/png" media="(min-width: 768px)" width="678" height="375" srcset="img/grant-tab.jpg 1x, img/grant-tab@2x.jpg 2x">
+              <img width="290" height="200" src="img/grant-mob.jpg" srcset="img/grant-mob@2x.jpg" alt="Дорожный указатель с названиями стран.">
             </picture>
           </div>
         </div>
