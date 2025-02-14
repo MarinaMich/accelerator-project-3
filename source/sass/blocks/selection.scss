@@ -1,5 +1,7 @@
 .selection {
-  height: 590px;
+  height: 640px;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 .selection__slides {
@@ -9,12 +11,7 @@
 
 .selection__slide {
   position: relative;
-  height: 330px;
   width:100%;
-}
-
-.selection__slide:nth-child(2n) {
-  height: 240px;
 }
 
 .selection__img img {
@@ -109,4 +106,31 @@
 
 .selection__description p {
   width: 213px;
+}
+
+.selection__button-prev,
+.selection__button-next {
+  position: absolute;
+  border: none;
+  bottom: 4px;
+  color: $add-accent;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  text-align: center;
+
+  &:disabled {
+    color: $disabled;
+  }
+}
+
+.selection__button-prev {
+  left: 0;
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+.selection__button-next {
+  right: 0;
 }

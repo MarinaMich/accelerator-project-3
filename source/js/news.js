@@ -32,7 +32,12 @@ const news = new Swiper('.selection__slides', {
         }
       });
     }
-  }
+  },
+
+  navigation: {
+    prevEl: '.selection__button-prev',
+    nextEl: '.selection__button-next',
+  },
 });
 
 export {tabs, news};
