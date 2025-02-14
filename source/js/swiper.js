@@ -1,4 +1,5 @@
-import Swiper from 'swiper';
+//import Swiper from 'swiper';
+import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Keyboard, Scrollbar} from 'swiper/modules';
 
 // слайдер блока hero
