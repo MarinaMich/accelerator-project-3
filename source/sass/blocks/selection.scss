@@ -1,5 +1,5 @@
 .selection {
-
+  height: 590px;
 }
 
 .selection__slides {
@@ -10,6 +10,7 @@
 .selection__slide {
   position: relative;
   height: 330px;
+  width:100%;
 }
 
 .selection__slide:nth-child(2n) {
