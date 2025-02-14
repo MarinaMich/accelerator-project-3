@@ -1,7 +1,7 @@
 //import Swiper from 'swiper';
 import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Keyboard, Scrollbar} from 'swiper/modules';
-import {tabs} from './news.js';
+import {tabs, news} from './news.js';
 
 // слайдер блока hero
 
@@ -108,3 +108,4 @@ tabs.init();
 if (document.documentElement.clientWidth >= 768) {
   tabs.destroy();
 }
+news.init();

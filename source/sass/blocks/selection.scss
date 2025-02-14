@@ -1,0 +1,111 @@
+.selection {
+
+}
+
+.selection__slides {
+  width: 290px;
+  height: 100%;
+}
+
+.selection__slide {
+  position: relative;
+  height: 330px;
+}
+
+.selection__slide:nth-child(2n) {
+  height: 240px;
+}
+
+.selection__img img {
+  display: block;
+  border-radius: 12px;
+}
+
+.selection__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.selection__date {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  padding: 12px 12px 6px 0;
+  color: $add-accent;
+  background-color: $add-light;
+  border-radius: 0 12px 0 0;
+  position: relative;
+  width: 78px;
+  display: block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("/__spritemap#sprite-curvature-beige-view");
+    top: -15px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("/__spritemap#sprite-curvature-beige-view");
+    bottom: 0;
+    left: 78px;
+    background-repeat: no-repeat;
+  }
+}
+
+.selection__title {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $add-accent;
+  background-color: $add-light;
+  border-radius: 0 12px 0 0;
+  width: 200px;
+  padding: 10px 18px 4px 0;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("/__spritemap#sprite-curvature-beige-view");
+    bottom: 0;
+    left: 200px;
+    background-repeat: no-repeat;
+  }
+}
+
+.selection__description {
+  padding: 12px 10px 10px 0;
+  border-radius: 0 12px 0 0;
+  background-color: $add-light;
+  column-gap: 10px;
+  width: 263px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url("/__spritemap#sprite-curvature-beige-view");
+    bottom: 0;
+    left: 263px;
+    background-repeat: no-repeat;
+  }
+}
+
+.selection__description p {
+  width: 213px;
+}
