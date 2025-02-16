@@ -14,13 +14,15 @@ const tabs = new Swiper('.tabs', {
 
 const news = new Swiper('.selection__slides', {
   modules: [Navigation, Pagination, Keyboard, Grid],
-  loop: false,
   grabCursor: true,
   slidesPerView: 1,
-  slidesPerGroup: 1,
+  slidesPerColumn: 2,
+  slidesPerGroup : 1,
   spaceBetween: 20,
   grid: {
     rows: 2,
+    fill: 'column',
+
   },
   on: {
     init: function () {
@@ -31,12 +33,22 @@ const news = new Swiper('.selection__slides', {
           slide.style.height = '240px';
         }
       });
-    }
+    },
   },
 
   navigation: {
     prevEl: '.selection__button-prev',
     nextEl: '.selection__button-next',
+  },
+
+  pagination: {
+    el: '.selection__pagination',
+    type: 'bullets',
+    clickable: true,
+    // Буллеты с нумерацией
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
   },
 });
 
