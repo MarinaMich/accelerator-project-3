@@ -15,14 +15,15 @@ const tabs = new Swiper('.tabs', {
 const news = new Swiper('.selection__slides', {
   modules: [Navigation, Pagination, Keyboard, Grid],
   grabCursor: true,
+  direction: 'horizontal',
   slidesPerView: 1,
-  slidesPerColumn: 2,
-  slidesPerGroup : 1,
+  autoHeight: false,
+  //slidesPerColumn: 2,
+ // slidesPerGroup : 1,
   spaceBetween: 20,
   grid: {
     rows: 2,
     fill: 'column',
-
   },
   on: {
     init: function () {
