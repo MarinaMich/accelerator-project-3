@@ -17,6 +17,7 @@ if (document.documentElement.clientWidth >= 768) {
 }
 
 const tabsList = document.querySelectorAll('.tabs__item');
+
 // определение текущего таба
 
 const thisTab = (index) => {
@@ -77,7 +78,7 @@ const news = new Swiper('.selection__slides', {
         paginationBullet.style.display = 'none';
       }
     },
-    activeIndexChange: function() {
+    slideChange: function() {
       if (document.documentElement.clientWidth >= 1440) {
         this.slides.forEach((slide) => {
           const index = this.activeIndex;
