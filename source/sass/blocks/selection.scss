@@ -129,6 +129,21 @@
   &:disabled {
     color: $disabled;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-color: $white;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
 }
 
 .selection__button-prev {
@@ -164,6 +179,24 @@
   font-size: 14px;
   line-height: 14px;
   opacity: 0.5;
+
+  &:hover {
+    border: 2px solid $add-accent;
+    opacity: 1;
+  }
+
+  &:focus-visible {
+    border: 2px solid $add-accent;
+    opacity: 1;
+    background-color: $white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $add-blue-button;
+    color: $white;
+    opacity: 1;
+  }
 }
 
 .selection__pagination .swiper-pagination-bullet-active {

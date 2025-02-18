@@ -64,6 +64,21 @@
   &:disabled {
     color: $disabled;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-color: $white;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
 }
 
 .types-programs__button-prev {
