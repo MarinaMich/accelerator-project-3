@@ -163,11 +163,13 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
+  opacity: 0.5;
 }
 
 .selection__pagination .swiper-pagination-bullet-active {
   background-color: $add-accent;
   color: $white;
+  opacity: 1;
 }
 
 @media (min-width: $tablet-width) {

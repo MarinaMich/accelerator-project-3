@@ -1,5 +1,5 @@
 .news {
-  padding-top: 50px;
+  padding-top: 51px;
   padding-bottom: 50px;
 }
 
@@ -10,10 +10,15 @@
   line-height: 20px;
   text-align: center;
   color: $add-accent;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet-width) {
+  .news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .news__title {
     font-size: 34px;
     line-height: 50px;

@@ -2,7 +2,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.3px;
   text-align: center;
   color: $add-accent;
   text-transform: uppercase;
@@ -18,14 +18,14 @@
 }
 
 .tabs__item {
-  padding: 10px 12px;
+  padding: 11px 12px 9px;
   border: 2px solid transparent;
   border-radius: 20px;
   opacity: 60%;
   width: auto;
 
   &:first-child {
-    padding: 10px 14px;
+    padding: 11px 14px 9px;
   }
 }
 
