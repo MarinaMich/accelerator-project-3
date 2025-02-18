@@ -1,7 +1,7 @@
-//import Swiper from 'swiper';
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper';
+//import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Keyboard, Scrollbar} from 'swiper/modules';
-import {tabs, news} from './news.js';
+import './news.js';
 
 // слайдер блока hero
 
@@ -104,8 +104,4 @@ const typesPrograms = new Swiper('.types-programs', {
 
 heroSlider.init();
 typesPrograms.init();
-tabs.init();
-if (document.documentElement.clientWidth >= 768) {
-  tabs.destroy();
-}
-news.init();
+

@@ -15,7 +15,6 @@
 
 .tabs__list {
   @include list-reset;
-
 }
 
 .tabs__item {
@@ -35,3 +34,51 @@
   opacity: 1;
 }
 
+@media (min-width: $tablet-width) {
+  .tabs {
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.3px;
+    width: 674px;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .tabs__item {
+    padding: 14px 18px;
+
+    &:first-child {
+      padding: 14px 20px;
+    }
+  }
+
+  .tabs__list {
+    display: flex;
+    column-gap: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tabs {
+    width: 720px;
+    margin-bottom: 40px;
+  }
+
+  .tabs__list {
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .tabs__item {
+    padding: 14px 0;
+    text-align: center;
+    width: 120px;
+
+    &:first-child {
+      padding: 14px 0;
+      text-align: center;
+    }
+  }
+
+}

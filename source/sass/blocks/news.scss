@@ -12,3 +12,24 @@
   color: $add-accent;
   margin-bottom: 24px;
 }
+
+@media (min-width: $tablet-width) {
+  .news__title {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .news {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .news__title {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+}
