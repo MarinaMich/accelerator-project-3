@@ -11,6 +11,25 @@ const tabs = new Swiper('.tabs', {
   watchOverflow: true,
 });
 
+tabs.init();
+if (document.documentElement.clientWidth >= 768) {
+  tabs.destroy();
+}
+
+const tabsList = document.querySelectorAll('.tabs__item');
+// определение текущего таба
+
+const thisTab = (index) => {
+  tabsList.forEach((tab) => tab.classList.remove('tabs__item--active'));
+  tabsList[index].classList.add('tabs__item--active');
+};
+
+tabsList.forEach((item, index) => {
+  item.addEventListener('click', () => {
+    thisTab(index);
+  });
+});
+
 // слайдер новостей
 
 const news = new Swiper('.selection__slides', {
@@ -187,9 +206,3 @@ const changePagination = () => {
 news.on('slideChange', changePagination);
 window.addEventListener('resize', hideBulletsOnInit);
 window.addEventListener('resize', changePagination);
-
-tabs.init();
-if (document.documentElement.clientWidth >= 768) {
-  tabs.destroy();
-}
-
