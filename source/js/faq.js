@@ -6,8 +6,10 @@ const itemHandler = (evt) => {
   const item = evt.currentTarget;
   if(item.classList.contains('faq__item--open')) {
     item.classList.remove('faq__item--open');
+    item.style.minHeight = '84px';
   } else {
     item.classList.add('faq__item--open');
+    item.style.minHeight = `${item.scrollHeight}px`;
   }
 };
 

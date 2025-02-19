@@ -29,6 +29,8 @@
   padding: 22px 15px;
   border: 2px solid $add-accent;
   border-radius: 14px;
+  overflow: hidden;
+  transition: min-height 0.5s ease;
 }
 
 .faq__item p {
@@ -73,10 +75,14 @@
 
 .faq__item--open {
   background-color: $add-accent;
+  transition: min-height 1s ease;
 
   p {
     display: block;
     color: $add-light;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
   }
   .faq__button {
     background-color: $white;
