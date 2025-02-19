@@ -15,4 +15,83 @@
 
 .faq__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.faq__wrapper {
+  display: flex;
+  column-gap: 32px;
+}
+
+.faq__item {
+  padding: 22px 15px;
+  border: 2px solid $add-accent;
+  border-radius: 14px;
+}
+
+.faq__item p {
+  display: none;
+}
+
+.faq__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  width: 184px;
+  margin: 0;
+}
+
+.faq__button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: $add-accent;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 1px;
+    background-color: $white;
+    right: 10px;
+    top: 20px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 1px;
+    background-color: $white;
+    bottom: 10px;
+  }
+}
+
+.faq__item--open {
+  background-color: $add-accent;
+
+  p {
+    display: block;
+    color: $add-light;
+  }
+  .faq__button {
+    background-color: $white;
+
+    &::after {
+      background-color: $add-accent;
+    }
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .faq__subtitle {
+    color: $white;
+  }
+
 }
