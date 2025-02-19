@@ -1,0 +1,18 @@
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $add-accent;
+}
+
+.faq__title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: $add-accent;
+  margin-bottom: 30px;
+}
+
+.faq__list {
+  @include list-reset;
+}
