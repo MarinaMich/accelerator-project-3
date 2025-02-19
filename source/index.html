@@ -21,53 +21,53 @@
           </button>
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="">о проекте</a>
+              <a class="menu__link" href="#about">о проекте</a>
             </li>
             <li class="menu__item">
               <a class="menu__link menu__link--sublist" href="#">программы</a>
               <ul class="menu__sublist">
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Стажировки</a>
+                  <a class="menu__link" href="#internship" tabindex="-1">Стажировки</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Волонтёрство</a>
+                  <a class="menu__link" href="#volunteer" tabindex="-1">Волонтёрство</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Учёба</a>
+                  <a class="menu__link" href="#study" tabindex="-1">Учёба</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Религия</a>
+                  <a class="menu__link" href="#religion" tabindex="-1">Религия</a>
                 </li>
               </ul>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">как поехать</a>
+              <a class="menu__link" href="#grant">как поехать</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">отзывы</a>
+              <a class="menu__link" href="#">отзывы</a>
             </li>
             <li class="menu__item">
               <a class="menu__link menu__link--sublist" href="#">новости</a>
               <ul class="menu__sublist">
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Общее</a>
+                  <a class="menu__link" href="#" tabindex="-1">Общее</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Волонтёрство</a>
+                  <a class="menu__link" href="#" tabindex="-1">Волонтёрство</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Стажировка</a>
+                  <a class="menu__link" href="#" tabindex="-1">Стажировка</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Карьера</a>
+                  <a class="menu__link" href="#" tabindex="-1">Карьера</a>
                 </li>
                 <li class="menu__subitem">
-                  <a class="menu__link" href="" tabindex="-1">Путешествия</a>
+                  <a class="menu__link" href="#" tabindex="-1">Путешествия</a>
                 </li>
               </ul>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="">контакты</a>
+              <a class="menu__link" href="#">контакты</a>
             </li>
           </ul>
         </nav>
@@ -178,7 +178,7 @@
           </div>
         </div>
       </section>
-      <section class="about container" data-test="about">
+      <section class="about container" id="about"  data-test="about">
         <div class="about__description ">
           <div class="about__container">
             <h2 class="about__title">О проекте «Стажировка»</h2>
@@ -187,15 +187,7 @@
           </div>
           <div class="about__container">
             <h3>Наша цель</h3>
-            <p>Наша деятельность направлена
-              на повышение квалификации молодых
-              специалистов на ранних и средних
-              стадиях карьеры, предоставляя
-              им инструменты для решения сложных
-              проблем, с которыми сталкиваются в мире.
-              Цель центра — наделить этих людей
-              способностью инициировать значимые
-              изменения.</p>
+            <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
               <button class="about__btn button">подробнее о проекте
                 <span class="about__btn-arrow">
                   <svg width="8" height="8">
@@ -229,7 +221,7 @@
         <div class="programs__wrapper">
           <div class="programs__slider types-programs swiper">
             <div class="types-programs__wrapper swiper-wrapper">
-              <div class="types-programs__type swiper-slide">
+              <div class="types-programs__type swiper-slide" id="internship">
                 <div class="types-programs__img">
                   <picture>
                     <!-- WebP -->
@@ -250,11 +242,12 @@
                       <svg width="8" height="8">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
+                      <span class="visually-hidden">Подробнее о cтажировках.</span>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="types-programs__type swiper-slide">
+              <div class="types-programs__type swiper-slide" id="volunteer">
                 <div class="types-programs__img">
                   <picture>
                     <!-- WebP -->
@@ -274,11 +267,12 @@
                       <svg width="8" height="8">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
+                      <span class="visually-hidden">Подробнее о волонтёрстве.</span>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="types-programs__type swiper-slide">
+              <div class="types-programs__type swiper-slide" id="study">
                 <div class="types-programs__img">
                   <picture>
                     <!-- WebP -->
@@ -299,11 +293,12 @@
                       <svg width="8" height="8">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
+                      <span class="visually-hidden">Подробнее об учёбе.</span>
                     </a>
                   </div>
                 </div>
               </div>
-              <div class="types-programs__type swiper-slide">
+              <div class="types-programs__type swiper-slide" id="religion">
                 <div class="types-programs__img">
                   <picture>
                     <!-- WebP -->
@@ -323,6 +318,7 @@
                       <svg width="8" height="8">
                         <use href="/__spritemap#sprite-arrow"></use>
                       </svg>
+                      <span class="visually-hidden">Подробнее о религии.</span>
                     </a>
                   </div>
                 </div>
@@ -350,7 +346,7 @@
         </a>
         </div>
       </section>
-      <section class="grant" data-test="grant">
+      <section class="grant" id="grant" data-test="grant">
         <div class="grant__wrapper container">
           <div class="grant__description">
             <h2 class="grant__title">Как поехать</h2>
@@ -379,7 +375,7 @@
           </div>
         </div>
       </section>
-      <section class="news container" data-test="news">
+      <section class="news container" id="news" data-test="news">
         <h2 class="news__title">Новости и материалы</h2>
         <div class="news__tabs tabs swiper">
           <div class="tabs__list swiper-wrapper">
