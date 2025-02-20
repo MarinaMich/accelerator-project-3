@@ -330,11 +330,13 @@
             <svg width="10" height="10">
               <use href="/__spritemap#sprite-slide-arrow"></use>
             </svg>
+            <span class="visually-hidden">Назад.</span>
           </button>
           <button class="types-programs__button-next swiper-button-next">
             <svg width="10" height="10">
               <use href="/__spritemap#sprite-slide-arrow"></use>
             </svg>
+            <span class="visually-hidden">Вперед.</span>
           </button>
         </div>
         <a class="programs__btn button" href="#">все программы
@@ -892,7 +894,7 @@
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__slides swiper">
           <div class="reviews__wrapper swiper-wrapper">
-            <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide swiper-slide" tabindex="0">
               <div class="reviews__content review">
                 <div class="review__personal">
                   <div class="review__photo">
@@ -902,7 +904,7 @@
                       <source type="images/webp" width="60" height="60" srcset="img/mobile/avatar.webp 1x, img/mobile/avatar@2x.webp 2x">
                       <!-- JPG -->
                       <source type="image/png" media="(min-width: 768px)" width="90" height="90" srcset="img/tablet/avatar.jpg 1x, img/tablet/avatar@2x.jpg 2x">
-                      <img width="60" height="60" src="img/mobile/avatar.jpg" srcset="img/mobile/avatar@2.jpg" alt="Фото девушки, оставивщей отзыв.">
+                      <img width="60" height="60" src="img/mobile/avatar.jpg" srcset="img/mobile/avatar@2x.jpg" alt="Фото девушки, оставивщей отзыв.">
                     </picture>
                   </div>
                   <div class="review__data">
@@ -930,7 +932,7 @@
                 </div>
               </div>
             </div>
-            <div class="reviews__slide swiper-slide">
+            <div class="reviews__slide swiper-slide" tabindex="0">
               <div class="reviews__content review">
                 <div class="review__personal">
                   <div class="review__photo">
@@ -940,7 +942,7 @@
                       <source type="images/webp" width="60" height="60" srcset="img/mobile/avatar-2.webp 1x, img/mobile/avatar-2@2x.webp 2x">
                       <!-- JPG -->
                       <source type="image/png" media="(min-width: 768px)" width="90" height="90" srcset="img/tablet/avatar-2.jpg 1x, img/tablet/avatar-2@2x.jpg 2x">
-                      <img width="60" height="60" src="img/mobile/avatar-2.jpg" srcset="img/mobile/avatar-2@2.jpg" alt="Фото мужчины, оставивщего отзыв.">
+                      <img width="60" height="60" src="img/mobile/avatar-2.jpg" srcset="img/mobile/avatar-2@2x.jpg" alt="Фото мужчины, оставивщего отзыв.">
                     </picture>
                   </div>
                   <div class="review__data">
@@ -971,8 +973,16 @@
         <!--   <div class="reviews__slide swiper-slide">Slide 3</div>-->
           </div>
         </div>
-        <div class="reviews__button-prev swiper-button-prev"></div>
-        <div class="reviews__button-next swiper-button-next"></div>
+        <button class="reviews__button-prev swiper-button-prev" type="button" aria-label="Назад.">
+          <svg width="10" height="10">
+            <use href="/__spritemap#sprite-slide-arrow"></use>
+          </svg>
+        </button>
+        <button class="reviews__button-next swiper-button-next" type="button" aria-label="Вперед.">
+          <svg width="10" height="10">
+            <use href="/__spritemap#sprite-slide-arrow"></use>
+          </svg>
+        </button>
         <div class="reviews__scrollbar swiper-scrollbar"></div>
       </section>
       <div data-test="contacts">contacts</div>

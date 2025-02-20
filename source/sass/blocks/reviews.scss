@@ -1,6 +1,7 @@
 .reviews {
   padding-top: 50px;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .reviews__title {
@@ -9,4 +10,47 @@
   line-height: 20px;
   margin: 5px 0 35px;
   color: $add-accent;
+}
+
+.reviews__button-prev,
+.reviews__button-next {
+  position: absolute;
+  border: none;
+  top: 55px;
+  color: $add-accent;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+
+  &:disabled {
+    color: $disabled;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:focus-visible {
+    background-color: $white;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $white;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+}
+
+.reviews__button-prev {
+  right: 45px;
+  svg {
+    transform: rotate(-180deg);
+  }
+}
+
+.reviews__button-next {
+  right: 15px;
 }

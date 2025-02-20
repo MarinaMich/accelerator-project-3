@@ -102,6 +102,45 @@ const typesPrograms = new Swiper('.types-programs', {
   },
 });
 
+// слайдер отзывов
+
+const reviews = new Swiper('.reviews__slides', {
+  modules: [Navigation, Scrollbar, Keyboard],
+  loop: false,
+  grabCursor: true,
+  spaceBetween: 30,
+  breakpoints: {
+    768: {
+      spaceBetween: 30,
+      keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+      },
+      slidesPerView: 2.13,
+      scrollbar: {
+        el: '.reviews__scrollbar',
+        draggable: true,
+        dragSize: 324,
+      },
+    },
+    1440: {
+      slidesPerView: 'auto',
+      spaceBetween: 32,
+      scrollbar: {
+        el: '.reviews__scrollbar',
+        draggable: true,
+        dragSize: 392,
+        snapOnRelease: true,
+      },
+    },
+  },
+  navigation: {
+    prevEl: '.reviews__button-prev',
+    nextEl: '.reviews__button-next',
+  },
+});
+
 heroSlider.init();
 typesPrograms.init();
-
+reviews.init();
