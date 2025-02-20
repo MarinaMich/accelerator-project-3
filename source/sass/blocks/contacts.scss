@@ -93,5 +93,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 
+  .contacts__wrapper {
+    width: 1240px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__title {
+    font-size: 50px;
+    margin-right: 413px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__description {
+    width: 604px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__content {
+    line-height: 26px;
+  }
+
+  .contacts__content--address {
+    width: 263px;
+  }
+
+  .contacts__map {
+    padding-top: 42px;
+  }
 }
