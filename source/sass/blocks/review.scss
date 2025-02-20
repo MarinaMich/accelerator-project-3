@@ -105,7 +105,6 @@
   .review__data {
     font-size: 20px;
     line-height: 24px;
-    //margin-top: 2px;
   }
 
   .review__date {
@@ -124,5 +123,38 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    padding: 50px 46px 50px 50px;
+    height: 483px;
+    width: 604px;
+    row-gap: 30px;
+    column-gap: 40px;
+    grid-template-rows: auto 1fr;
+  }
 
+  .review__data {
+    font-size: 18px;
+  }
+
+  .review__program {
+    justify-content: flex-end;
+  }
+
+  .review__date {
+    line-height: 18px;
+  }
+
+  .review__detail {
+    margin-bottom: 11px;
+  }
+
+  .reviews__excerpt {
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  .review__text p {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }

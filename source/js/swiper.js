@@ -88,6 +88,7 @@ const typesPrograms = new Swiper('.types-programs', {
     1440: {
       slidesPerView: 'auto',
       spaceBetween: 32,
+      allowTouchMove: false,
       scrollbar: {
         el: '.types-programs__scrollbar',
         draggable: true,
@@ -125,12 +126,12 @@ const reviews = new Swiper('.reviews__slides', {
       },
     },
     1440: {
-      slidesPerView: 'auto',
+      slidesPerView: 2,
       spaceBetween: 32,
       scrollbar: {
         el: '.reviews__scrollbar',
         draggable: true,
-        dragSize: 392,
+        dragSize: 394,
         snapOnRelease: true,
       },
     },

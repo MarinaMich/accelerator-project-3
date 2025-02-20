@@ -95,5 +95,37 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
 
+  .reviews__title {
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+    margin-left: 3px;
+  }
+
+  .reviews__slides {
+    height: 483px;
+    margin-right: 0;
+  }
+
+  .reviews__scrollbar {
+    width: 1136px;
+  }
+
+  .reviews__button-prev,
+  .reviews__button-next {
+    top: 661px;
+  }
+
+  .reviews__button-prev {
+    right: 132px;
+  }
+
+  .reviews__button-next {
+    right: 100px;
+  }
 }
