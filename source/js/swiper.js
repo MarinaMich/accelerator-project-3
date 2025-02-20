@@ -117,11 +117,11 @@ const reviews = new Swiper('.reviews__slides', {
         onlyInViewport: true,
         pageUpDown: true,
       },
-      slidesPerView: 2.13,
+      slidesPerView: 1.276,
       scrollbar: {
         el: '.reviews__scrollbar',
         draggable: true,
-        dragSize: 324,
+        dragSize: 326,
       },
     },
     1440: {

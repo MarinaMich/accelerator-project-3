@@ -12,6 +12,10 @@
   color: $add-accent;
 }
 
+.reviews__slides {
+  height: 472px;
+}
+
 .reviews__button-prev,
 .reviews__button-next {
   position: absolute;
@@ -53,4 +57,43 @@
 
 .reviews__button-next {
   right: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-bottom: 112px;
+  }
+
+  .reviews__slides {
+    width: auto;
+    height: 417px;
+    margin-right: -45px;
+  }
+
+  .reviews__title {
+    font-size: 34px;
+    line-height: 50px;
+    margin: 0 0 40px;
+  }
+
+  .reviews__button-prev,
+  .reviews__button-next {
+    top: 597px;
+  }
+
+  .reviews__scrollbar {
+    margin-top: 50px;
+    width: 562px;
+    height: 2px;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+
+  .reviews__scrollbar .swiper-scrollbar-drag {
+    height: 2px;
+    background-color: $add-accent;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
