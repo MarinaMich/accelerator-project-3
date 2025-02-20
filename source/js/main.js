@@ -1,3 +1,4 @@
+import './news.js';
 import './swiper.js';
 import './menu.js';
 import './submenu.js';

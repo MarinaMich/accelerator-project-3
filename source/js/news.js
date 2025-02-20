@@ -1,4 +1,4 @@
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper';
 import 'swiper/css/grid';
 import {Navigation, Pagination, Keyboard, Grid} from 'swiper/modules';
 

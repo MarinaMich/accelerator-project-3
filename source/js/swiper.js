@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
-//import Swiper from 'swiper/bundle';
 import {Navigation, Pagination, Keyboard, Scrollbar} from 'swiper/modules';
-import './news.js';
+
 
 // слайдер блока hero
 
@@ -110,6 +109,7 @@ const reviews = new Swiper('.reviews__slides', {
   loop: false,
   grabCursor: true,
   spaceBetween: 30,
+  slidesPerView: 1,
   breakpoints: {
     768: {
       spaceBetween: 30,
@@ -118,6 +118,7 @@ const reviews = new Swiper('.reviews__slides', {
         onlyInViewport: true,
         pageUpDown: true,
       },
+
       slidesPerView: 1.276,
       scrollbar: {
         el: '.reviews__scrollbar',

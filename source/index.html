@@ -1024,7 +1024,37 @@
           <div class="reviews__scrollbar swiper-scrollbar"></div>
         </div>
       </section>
-      <div data-test="contacts">contacts</div>
+      <section class="contacts container" data-test="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контакты</h2>
+          <address class="contacts__description">
+            <div>
+              <dt class="contacts__item">центральный офис</dt>
+              <dd class="contacts__content">г. Новосибирск, ул. Щетинкина 68, культурный центр</dd>
+            </div>
+            <div>
+              <dt class="contacts__item">Телефон</dt>
+              <dd class="contacts__content" href="tel:+7(963)876-876-76">+7 963 876 876 76</dd>
+            </div>
+            <div>
+              <dt class="contacts__item">Email</dt>
+              <dd class="contacts__content" href="mailto:Info@stazh.ru">Info@stazh.ru</dd>
+            </div>
+          </address>
+          <div class="contacts__map">
+            <picture>
+              <!-- WebP -->
+              <source type="images/webp" media="(min-width: 1440px)" width="1240" height="486" srcset="img/desktop/map.webp 1x, img/desktop/map@2x.webp 2x">
+              <source type="images/webp" media="(min-width: 768px)" width="678" height="500" srcset="img/tablet/map1.webp 1x, img/tablet/map1@2x.webp 2x">
+              <source type="images/webp" width="290" height="330" srcset="img/mobile/map2.webp 1x, img/mobile/map2@2x.webp 2x">
+              <!-- JPG -->
+              <source type="image/png" media="(min-width: 1440px)" width="1240" height="486" srcset="img/desktop/map.jpg 1x, img/desktop/map@2x.jpg 2x">
+              <source type="image/png" media="(min-width: 768px)" width="678" height="500" srcset="img/tablet/map1.jpg 1x, img/tablet/map1@2x.jpg 2x">
+              <img width="290" height="240" src="img/mobile/map2.jpg" srcset="img/mobile/map2@2x.jpg" alt="Место расположения офиса на карте.">
+            </picture>
+          </div>
+        </div>
+      </section>
       <div data-test="form">form</div>
     </main>
     <footer data-test="footer">footer</div>
