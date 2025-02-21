@@ -131,7 +131,6 @@
   background-color: $add-accent;
   border: 1px solid $white;
   color: $white;
-  font-family: Manrope;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.24px;
@@ -153,6 +152,92 @@
   padding: 12px;
 }
 
-.programs__btn-arrow svg {
-  stroke-width: 1.6px;
+.form__btn-arrow svg {
+  stroke-width: 4px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding: 50px 58px;
+  }
+
+  .form__wrapper {
+    min-height: 780px;
+    padding: 0;
+    background:
+      image-set(
+        url("../../img/tablet/form-background.webp") type("image/webp") 1x,
+        url("../../img/tablet/form-background@2x.webp") type("image/webp") 2x,
+        url("../../img/tablet/form-background.jpg") type("image/png") 1x,
+        url("../../img/tablet/form-background@2x.jpg") type("image/png") 2x)
+      top 0 center no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+  }
+
+  .form__main {
+    padding: 30px 40px;
+    padding-bottom: 36px;
+    width: 442px;
+    margin: 0;
+  }
+
+  .form__title {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 11px;
+    margin-bottom: 31px;
+  }
+
+  .form__text {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .form__container {
+    margin-bottom: 40px;
+  }
+
+  .form__item {
+    &--select {
+      width: 362px;
+    }
+  }
+
+  .form__label {
+    font-size: 14px;
+    line-height: 20px;
+
+    &--checkbox {
+      width: auto;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .form__input {
+    &--message {
+      min-height: 88px;
+    }
+  }
+
+  .form__btn {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+    width: 352px;
+    padding: 20px 80px 20px 30px;
+  }
+
+  .form__btn-arrow {
+    width: 46px;
+    height: 46px;
+    right: 5px;
+    top: 4px;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }
