@@ -37,6 +37,28 @@
   opacity: 0.8;
 }
 
+.contacts__link {
+  @include link-edit;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus,
+  &:focus-visible {
+    color: $dark-main;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    outline: none;
+  }
+  &:active {
+    color: $white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+}
+
 .contacts__content {
   margin: 0;
   color: $white;
