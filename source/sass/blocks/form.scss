@@ -171,8 +171,6 @@
         url("../../img/tablet/form-background.jpg") type("image/png") 1x,
         url("../../img/tablet/form-background@2x.jpg") type("image/png") 2x)
       top 0 center no-repeat;
-    background-size: cover;
-    border-radius: 16px;
   }
 
   .form__main {
@@ -239,5 +237,59 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    padding: 60px 100px;
+  }
 
+  .form__wrapper {
+    min-height: 800px;
+    background:
+      image-set(
+        url("../../img/desktop/form-background.webp") type("image/webp") 1x,
+        url("../../img/desktop/form-background@2x.webp") type("image/webp") 2x,
+        url("../../img/desktop/form-background.jpg") type("image/png") 1x,
+        url("../../img/desktop/form-background@2x.jpg") type("image/png") 2x)
+      top 0 center no-repeat;
+  }
+
+  .form__main {
+    padding: 30px 70px 40px;
+    width: 490px;
+  }
+
+  .form__title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 14px;
+    margin-bottom: 34px;
+  }
+
+  .form__text {
+    line-height: 26px;
+  }
+
+  .form__item {
+    &--select {
+      width: 350px;
+    }
+  }
+
+  .form__label {
+    line-height: 18px;
+
+    &--checkbox {
+      line-height: 12px;
+    }
+
+    &--select {
+      line-height: 14px;
+      font-size: 14px;
+    }
+  }
+
+  .form__input {
+    &--message {
+      min-height: 90px;
+    }
+  }
 }
