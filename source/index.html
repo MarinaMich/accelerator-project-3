@@ -1059,7 +1059,49 @@
           </div>
         </div>
       </section>
-      <div data-test="form">form</div>
+      <section class="form" data-test="form">
+        <div class="form__wrapper">
+          <form class="form__main" action="https://echo.htmlacademy.ru" method="post">
+            <h2 class="form__title">Напишите нам</h2>
+            <p class="form__text">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <div class="form__container">
+              <div class="form__item">
+                <label class="form__label" for="name">Имя</label>
+                <input class="form__input" type="text" name="name" id="name" required>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="number">Телефон</label>
+                <input class="form__input" type="tel" name="phone" id="number" maxlength="21" required>
+              </div>
+              <div class="form__item">
+                <label class="form__label" for="message">Ваше сообщение</label>
+                <textarea class="form__input form__input--message" name="message" id="message"></textarea>
+              </div>
+              <div class="form__item form__item--select">
+                <label class="form__label" for="cities">Выберите город</label>
+                <input class="form__input form__input--select" list="city_options" id="cities" name="city_name">
+                <datalist id="city_options">
+                  <option value="Москва">
+                  <option value="Санкт-Петербург">
+                  <option value="Казань">
+                </datalist>
+              </div>
+              <label class="form__item form__item--checkbox">
+                <input class="visually-hidden form__input-control" type="checkbox" name="consent">
+                <span class="form__input form__input--checkbox"></span>
+                <span class="form__label form__label--checkbox">Я согласен на обработку моих персональных данных</span>
+              </label>
+            </div>
+            <button class="form__btn button" type="submit">Отправить
+              <span class="form__btn-arrow">
+                <svg width="8" height="8">
+                  <use href="/__spritemap#sprite-arrow"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script>
