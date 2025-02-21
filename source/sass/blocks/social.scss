@@ -11,3 +11,34 @@
   border-radius: 50%;
 
 }
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    width: 36px;
+    height: 36px;
+  }
+
+  .social__link svg {
+    width: 16px;
+    height: 16px;
+  }
+/*
+  .social__link--vk svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__link--ok svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .social__link--reddit svg {
+    width: 15px;
+    height: 15px;
+  }*/
+}
+
+@media (min-width: $desktop-width) {
+
+}

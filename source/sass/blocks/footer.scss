@@ -45,3 +45,48 @@
 .footer__copyright {
   opacity: 0.6;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: grid;
+    grid-template-columns: 140px 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 25px;
+  }
+
+  .footer__logo {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .footer__nav {
+    margin-bottom: 0;
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+
+  .footer__wrapper {
+    margin-bottom: 0;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: start;
+    align-items: start;
+    line-height: 12px;
+    row-gap: 14px;
+  }
+
+  .footer__privacy {
+    text-underline-offset: 4px;
+  }
+
+  .footer__social {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-self: end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}

@@ -11,3 +11,15 @@
   @include link-edit;
   cursor: pointer;
 }
+
+@media (min-width: $tablet-width) {
+  .menu-add__list {
+    column-gap: 16px;
+    justify-content: end;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+}
