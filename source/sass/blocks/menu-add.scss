@@ -1,0 +1,13 @@
+.menu-add__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.menu-add__link {
+  @include link-edit;
+  cursor: pointer;
+}

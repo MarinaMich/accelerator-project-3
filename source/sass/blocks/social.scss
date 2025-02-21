@@ -1,0 +1,13 @@
+.social__link {
+  @include link-edit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background-color: $add-accent;
+  color: $white;
+  border-radius: 50%;
+
+}
